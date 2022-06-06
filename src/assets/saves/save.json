@@ -1,0 +1,198 @@
+[   
+    {
+        "piecesPositions": [
+            {
+                "x": 0,
+                "y": 0,
+                "name": "T",
+                "color": "D"
+            },
+            {
+                "x": 1,
+                "y": 0,
+                "name": "H",
+                "color": "D"
+            },
+            {
+                "x": 2,
+                "y": 0,
+                "name": "B",
+                "color": "D"
+            },
+            {
+                "x": 3,
+                "y": 0,
+                "name": "Q",
+                "color": "D"
+            },
+            {
+                "x": 4,
+                "y": 0,
+                "name": "K",
+                "color": "D"
+            },
+            {
+                "x": 5,
+                "y": 0,
+                "name": "B",
+                "color": "D"
+            },
+            {
+                "x": 6,
+                "y": 0,
+                "name": "H",
+                "color": "D"
+            },
+            {
+                "x": 7,
+                "y": 0,
+                "name": "T",
+                "color": "D"
+            },
+            {
+                "x": 0,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 1,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 2,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 3,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 4,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 5,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 6,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 7,
+                "y": 1,
+                "name": "P",
+                "color": "D"
+            },
+            {
+                "x": 0,
+                "y": 7,
+                "name": "T",
+                "color": "W"
+            },
+            {
+                "x": 1,
+                "y": 7,
+                "name": "H",
+                "color": "W"
+            },
+            {
+                "x": 2,
+                "y": 7,
+                "name": "B",
+                "color": "W"
+            },
+            {
+                "x": 3,
+                "y": 7,
+                "name": "Q",
+                "color": "W"
+            },
+            {
+                "x": 4,
+                "y": 7,
+                "name": "K",
+                "color": "W"
+            },
+            {
+                "x": 5,
+                "y": 7,
+                "name": "B",
+                "color": "W"
+            },
+            {
+                "x": 6,
+                "y": 7,
+                "name": "H",
+                "color": "W"
+            },
+            {
+                "x": 7,
+                "y": 7,
+                "name": "T",
+                "color": "W"
+            },
+            {
+                "x": 0,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 1,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 2,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 3,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 4,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 5,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 6,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            },
+            {
+                "x": 7,
+                "y": 6,
+                "name": "P",
+                "color": "W"
+            }
+        ]
+    }
+]
