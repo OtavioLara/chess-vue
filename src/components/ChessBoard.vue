@@ -14,6 +14,8 @@
         @click="onClick($event, field)"
         />
       </div>
+      <h1>{{checkMateMessage}}</h1>
+      
     </div>
     <div class="graveyard">
       <GraveYard v-for="grave in graveyard" v-bind="grave" :key="grave"/>
@@ -24,7 +26,7 @@
 <script>
   import BoardField from './Field.vue';
   import { piecesDict, piecesColor, fieldColor } from './PiecesUtil.js';
-  import { possibleMovements } from './ChessValidations.js';
+  import { possibleMovements, isKingCheck, isKingCheckMate} from './ChessValidations.js';
   let saves_context = require.context('../assets/saves/');
   import GraveYard from './GraveYard.vue'
 
@@ -81,7 +83,9 @@
       return {
         chessBoardMatrix: loadSavedGame(saves_context('./save.json')),
         graveyard: [],
-        shift: piecesColor.W
+        shift: piecesColor.W,
+        isInCheck: false,
+        isInCheckMate: false
       }
     },
     methods: {
@@ -139,7 +143,28 @@
         newPiece.color = newField.color
         newPiece.piece_mv_number += 1
         this.chessBoardMatrix[newField.pos.x][newField.pos.y] = newPiece
+        this.isInCheck = isKingCheck(newPiece, this.chessBoardMatrix)
+        if(this.isInCheck){
+          this.isInCheckMate = isKingCheckMate(newPiece, this.chessBoardMatrix)
+          if(this.isInCheckMate){
+            return;
+          }
+        }
         this.shift = swapShift(this.shift)
+      }
+    },
+    computed: {
+      checkMateMessage: function () {
+        var message = ''
+        if(this.isInCheck){
+          message = 'The king is in Check'
+          if(this.isInCheckMate){
+            message += ' Mate! '
+            var winner = piecesColor.D == this.shift ? 'Blacks': 'Whites'
+            message += winner + ' Wins!'
+          }
+        }
+        return message
       }
     }
   }
